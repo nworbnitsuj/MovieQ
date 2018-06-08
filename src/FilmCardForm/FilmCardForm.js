@@ -12,7 +12,7 @@ class FilmCardForm extends Component{
         this.writeFilmCard = this.writeFilmCard.bind(this);
     }
 
-    // When the user input changes, set the newFilmContent to the value of what's in the input box.
+    /// When the user input changes, set the newFilmContent to the value of what's in the input box.
     handleUserInput(e){
         this.setState({
             newFilmContent: e.target.value,
