@@ -1,28 +1,66 @@
-.App {
-  text-align: center;
+@font-face {
+   font-family: 'hollywood';
+   src: url(./sf-hollywood-hills/sf-hollywood-hills.ttf);
+ }
+
+html{
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  width: 100%;
+  min-height:100%;
+  background:
+    linear-gradient(-45deg, rgba(0,0,0,0.0), rgba(0, 0, 0, 1)),
+    url('./hollywood2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+* {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+.cardsWrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.cardsHeader {
+  display: flex;
+  flex: 1 1 5%;
+  min-height: 1em;
+  max-height: 1em;
+  font-size: 8em;
+  color: rgb(128,0,128);
+  font-family: 'hollywood';
+  text-align: left;
+  align-content: center;
+  padding:10px 0px 10px 0px;
+  margin: 6px 6px 6px 6px;
+  background-color: rgba(128,0,128,0.35);
+  text-shadow: 4px 4px 12px lavender;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.cardsBody {
+  padding-top: 24px;
+  display: flex;
+  flex: 1 1 85%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.cardsFooter {
+  display: flex;
+  flex: 1 1 5%;
+  background-color: rgba(0,0,0,0.5);
 }

@@ -20,7 +20,7 @@ class FilmCardForm extends Component{
     }
 
     writeFilmCard(){
-        this.props.addCard(this.state.newFilmContent);
+        this.props.addFilmCard(this.state.newFilmContent);
 
         // Set newFilmContent back to an empty string.
         this.setState({

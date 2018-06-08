@@ -6,8 +6,8 @@ class FilmCard extends Component{
 
     constructor(props){
         super(props);
-        this.filmCardContent = props.filmCardContent;
-        this.filmCardId = props.filmCardId;
+        this.cardContent = props.cardContent;
+        this.cardId = props.cardId;
         this.handleRemoveFilmCard = this.handleRemoveFilmCard.bind(this);
     }
 
@@ -19,17 +19,17 @@ class FilmCard extends Component{
         return(
             <div className="filmCard fade-in">
                 <span className="closebtn"
-                      onClick={() => this.handleRemoveFilmCard(this.filmCardId)}>
+                      onClick={() => this.handleRemoveFilmCard(this.cardId)}>
                       &times;
                 </span>
-                <p className="filmCardContent">{ this.filmCardContent }</p>
+                <p className="cardContent">{ this.cardContent }</p>
             </div>
         )
     }
 }
 
 FilmCard.propTypes = {
-    filmCardContent: PropTypes.string
+    cardContent: PropTypes.string
 }
 
 export default FilmCard;
